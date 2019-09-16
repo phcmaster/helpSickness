@@ -3,9 +3,7 @@ package br.com.helpSickness.model.entity;
 
 import lombok.Getter;
 import lombok.Setter;
-
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Getter
@@ -23,23 +21,26 @@ public class DoencasEntity {
     private String nomeDaDoenca;
 
     @OneToMany
-    @Column(name = "SINTOMAS")
+    @Column(name = "FK_SINTOMAS")
     private List<SintomasEntity> sintomas;
 
 
     @OneToMany
-    @Column(name = "SINTOMAS")
+    @Column(name = "FK_TRATAMENTOS")
     private List<TratamentosEntity> tratamentos;
+
+    @Column(name = "DESCRICAO")
+    private String descricao;
 
 
     @Override
     public String toString() {
-
         return "DoencasEntity{" +
                 "idDoenca=" + idDoenca +
                 ", nomeDaDoenca='" + nomeDaDoenca + '\'' +
                 ", sintomas=" + sintomas +
                 ", tratamentos=" + tratamentos +
+                ", descricao='" + descricao + '\'' +
                 '}';
     }
 }

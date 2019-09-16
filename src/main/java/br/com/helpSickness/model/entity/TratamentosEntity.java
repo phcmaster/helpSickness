@@ -21,9 +21,6 @@ public class TratamentosEntity {
     private String nomeTratamento;
 
 
-//    @Column(name = "FK_Doencas")
-//    private DoencasEntity doencas;
-
     @Override
     public String toString() {
         return "TratamentosEntity{" +

@@ -23,6 +23,8 @@ public class SintomasEntity {
     @Column(name = "GRAU_SINTOMAS")
     private GrauDosSintomasEnum grauDosSintomasEnum;
 
+    @Column(name = "PESO_SINTOMAS")
+    private int peso;
 
     @Override
     public String toString() {
@@ -30,6 +32,7 @@ public class SintomasEntity {
                 "idSintoma=" + idSintoma +
                 ", nomeDoSintoma='" + nomeDoSintoma + '\'' +
                 ", grauDosSintomasEnum=" + grauDosSintomasEnum +
+                ", peso=" + peso +
                 '}';
     }
 }
