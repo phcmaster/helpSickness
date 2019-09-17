@@ -6,6 +6,8 @@ import lombok.Getter;
 
 import java.util.List;
 
+//requisicao de sintomas
+
 @Getter
 public class ConsultaRequest {
 

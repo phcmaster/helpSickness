@@ -23,6 +23,11 @@ public class DoencasServiceImpl implements DoencasService {
        return doencasRepository.save(entity);
     }
 
+    @Override
+    public void deletar(int id) {
+
+        this.doencasRepository.deleteById(id);
+    }
 
 
 }

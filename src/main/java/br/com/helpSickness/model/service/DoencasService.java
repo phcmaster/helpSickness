@@ -11,5 +11,7 @@ public interface DoencasService {
    List<DoencasEntity> listarDoencas();
 
    DoencasEntity salvarDoenca(DoencasEntity entity);
+
+   void deletar(int id);
 }
 
